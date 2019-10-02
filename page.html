@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>TODOS</title>
+</head>
+<style>
+input:checked+label {
+  text-decoration:line-through;
+}
+</style>
+<body>
+	<div class = "todos">
+		<div class = "todosHeader">
+			<img src = "todos.png" alt = "Todos">
+		</div>
+		
+		<div class = "todosList>
+			<div class = "todosListAddItem">
+   				<input type="text" size="40">
+			</div>
+			<div class = "todosListItem">
+				<input type="checkbox"> <label>HTML</label>
+			</div>
+			<div class = "todosListItem">
+				<input type="checkbox"> <label>CSS</label>
+			</div>
+			<div class = "todosListItem">
+				<input type="checkbox"> <label>JS</label>
+			</div>
+			<div class = "todosListItem">
+				<input type="checkbox"> <label>JS tools</label>
+		</div>
+		<div class = "todosButtons">
+			<button class = "buttonShow">All</button>
+			<button class = "buttonShow">Active</button>
+			<button class = "buttonShow">Completed</button>
+			<button class = "button">Clear completed</button>
+		</div>
+	</div>
+</body>
+</html>
