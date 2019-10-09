@@ -5,36 +5,69 @@
 	<title>TODOS</title>
 </head>
 <style>
-input:checked+label {
-  text-decoration:line-through;
+input[type="checkbox"]:checked+span {
+	color: grey;
+	text-decoration:line-through;
 }
+input[type="checkbox"]:before {
+    display: inline-block;
+    border-radius: 50%;
+    width: 150%;
+    height: 150%;
+    position: relative;
+    bot: 25%;
+    right: 25%;
+    border: 1px solid #555;
+	content: '';
+	background: #FFFFFF;
+	box-sizing: border-box;
+	align: center;
+}
+input[type="checkbox"]:checked:before {
+	background: grey;
+    border: 1px solid #555;
+	box-sizing: border-box;
+    text-align: center;
+	content: '✔';
+}
+
 </style>
 <body>
 	<div class = "todos">
 		<div class = "todosHeader">
 			<img src = "todos.png" alt = "Todos">
 		</div>
-		
-		<div class = "todosList>
+
+		<div class = "todosList">
 			<div class = "todosListAddItem">
-   				<input type="text" size="40">
+   				<input type="text" size="40" placeholder="What needs to be done?">
 			</div>
-			<div class = "todosListItem">
-				<input type="checkbox"> <label>HTML</label>
-			</div>
-			<div class = "todosListItem">
-				<input type="checkbox"> <label>CSS</label>
-			</div>
-			<div class = "todosListItem">
-				<input type="checkbox"> <label>JS</label>
-			</div>
-			<div class = "todosListItem">
-				<input type="checkbox"> <label>JS tools</label>
+
+			<button class = "buttonAdd">Add</button>
+
+			<ul>
+				<li>
+					<input type="checkbox" />  <span>HTML</span>
+					<button class="delete-button">X</button>
+				</li>
+				<li>
+					<input type="checkbox"/> <span>CSS</span>
+					<button class="delete-button">X</button>
+				</li>
+				<li>
+					<input type="checkbox"/> <span>JS</span>
+					<button class="delete-button">X</button>
+				</li>
+				<li>
+					<input type="checkbox"/> <span>JS tools</span>
+					<button class="delete-button">X</button>
+				</li>
+			</ul>
 		</div>
 		<div class = "todosButtons">
-			<button class = "buttonShow">All</button>
-			<button class = "buttonShow">Active</button>
-			<button class = "buttonShow">Completed</button>
+			<input type="radio" class = "buttonShow">All</input>
+			<input type="radio" class = "buttonShow">Active</input>
+			<input type="radio" class = "buttonShow">Completed</input>
 			<button class = "button">Clear completed</button>
 		</div>
 	</div>
