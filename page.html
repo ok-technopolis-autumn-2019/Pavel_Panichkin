@@ -9,6 +9,10 @@ input[type="checkbox"]:checked+span {
 	color: grey;
 	text-decoration:line-through;
 }
+* {
+	font-family: 'Roboto Condensed', sans-serif;
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+}
 input[type="checkbox"]:before {
     display: inline-block;
     border-radius: 50%;
@@ -30,21 +34,27 @@ input[type="checkbox"]:checked:before {
     text-align: center;
 	content: '✔';
 }
+h1 {
+font-style: normal;
+font-weight: 200;
+font-size: 100px;
+line-height: 21px;
+/* identical to box height, or 21% */
 
+letter-spacing: -2.5px;
+}
 </style>
 <body>
 	<div class = "todos">
 		<div class = "todosHeader">
-			<img src = "todos.png" alt = "Todos">
+			<h1>Todos</h1>
 		</div>
 
 		<div class = "todosList">
 			<div class = "todosListAddItem">
    				<input type="text" size="40" placeholder="What needs to be done?">
+				<button class = "buttonAdd">Add</button>
 			</div>
-
-			<button class = "buttonAdd">Add</button>
-
 			<ul>
 				<li>
 					<input type="checkbox" />  <span>HTML</span>
