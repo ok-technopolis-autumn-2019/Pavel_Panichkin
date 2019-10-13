@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset = "UTF-8">
+	<meta charset="UTF-8">
 	<title>TODOS</title>
 	<link rel="stylesheet" type="text/css" href="styles/default.css" />
 </head>
 
 <body>
-	<div class = "mainLayout">
+	<div class="mainLayout">
 			<h1 class="todosTitle">Todos</h1>
 
-		<div class = "todosList">
-			<div class = "todosListAddItem">
+		<div class="todosList">
+			<div class="todosListAddItem">
    				<input type="text" size="40" placeholder="What needs to be done?">
-				<button class = "buttonAdd">Add</button>
+				<button class="buttonAdd">Add</button>
 			</div>
 			<ul>
 				<li>
 					<input type="checkbox" />  <span>HTML</span>
-					<button class="delete-button">×</button>
+					<button class="deleteButton">×</button>
 				</li>
 				<li>
 					<input type="checkbox"/> <span>CSS</span>
-					<button class="delete-button">×</button>
+					<button class="deleteButton">×</button>
 				</li>
 				<li>
 					<input type="checkbox"/> <span>JS</span>
-					<button class="delete-button">×</button>
+					<button class="deleteButton">×</button>
 				</li>
 				<li>
 					<input type="checkbox"/> <span>JS tools</span>
-					<button class="delete-button">×</button>
+					<button class="deleteButton">×</button>
 				</li>
 			</ul>
 		</div>
-		<div class = "todosButtons">
-			<input type="radio" name="group1" class = "buttonShow"><span>All</span></input>
-			<input type="radio" name="group1" class = "buttonShow"><span>Active</span></input>
-			<input type="radio" name="group1" class = "buttonShow"><span>Completed</span></input>
-			<button class = "button">Clear completed</button>
+		<div class="todosToolbar">
+			<div class="todosToolbarFilters">
+			<label>
+				<input type="radio" name="group1" class="buttonShow" value="All"/>
+				All
+			</label>
+			<label>
+				<input type="radio" name="group1" class="buttonShow" value="Active"/>
+				Active
+			</label>
+			<label>
+				<input type="radio" name="group1" class="buttonShow" value="Completed"/>
+				Completed
+			</label>
+			</div>
 		</div>
+			<button class="button">Clear completed</button>
+
 	</div>
 </body>
 </html>
