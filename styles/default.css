@@ -27,7 +27,6 @@ body {
     border: none;
     outline: none;
     background: url(../images/select-all.png) no-repeat 0 0;
-
 }
 .todosTitle {
     text-transform: lowercase;
@@ -39,17 +38,16 @@ body {
 }
 
 .todosToolbar {
-
-        text-align: center;
+    text-align: center;
 }
 input[type="checkbox"]:before {
     display: inline-block;
+    position: relative;
     border-radius: 50%;
     width: 150%;
     height: 150%;
-    position: relative;
-    bot: 25%;
-    right: 25%;
+    right: 30%;
+    top: -20%;
     border: 1px solid #555;
 	content: '';
 	background: #FFFFFF;
