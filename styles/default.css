@@ -7,7 +7,6 @@ body {
 	 font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 .todosTitle {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
     text-transform: lowercase;
     font-style: normal;
     font-weight: 200;
@@ -38,7 +37,7 @@ input[type="checkbox"]:checked:before {
 }
 
 
-.delete-button {
+.deleteButton {
 	width: 20px;
 	height: 20px;
 	background: #FFFFFF;
