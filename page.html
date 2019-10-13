@@ -12,40 +12,40 @@
 
 		<div class="todosList">
 			<div class="todosListAddItem">
-   				<input type="text" size="40" placeholder="What needs to be done?">
+   				<input  placeholder="What needs to be done?" aria-label="Input new todos text">
 				<button class="buttonAdd">Add</button>
 			</div>
 			<ul>
 				<li>
-					<input type="checkbox" />  <span>HTML</span>
-					<button class="deleteButton">×</button>
+					<input type="checkbox" aria-label="Mark todos as ready"/>  <span>HTML</span>
+					<button class="deleteButton" aria-label="Delete todos">×</button>
 				</li>
 				<li>
-					<input type="checkbox"/> <span>CSS</span>
-					<button class="deleteButton">×</button>
+					<input type="checkbox" aria-label="Mark todos as ready"/> <span>CSS</span>
+					<button class="deleteButton" aria-label="Delete todos">×</button>
 				</li>
 				<li>
-					<input type="checkbox"/> <span>JS</span>
-					<button class="deleteButton">×</button>
+					<input type="checkbox" aria-label="Mark todos as ready"/> <span>JS</span>
+					<button class="deleteButton" aria-label="Delete todos">×</button>
 				</li>
 				<li>
-					<input type="checkbox"/> <span>JS tools</span>
-					<button class="deleteButton">×</button>
+					<input type="checkbox" aria-label="Mark todos as ready"/> <span>JS tools</span>
+					<button class="deleteButton" aria-label="Delete todos">×</button>
 				</li>
 			</ul>
 		</div>
 		<div class="todosToolbar">
 			<div class="todosToolbarFilters">
 			<label>
-				<input type="radio" name="group1" class="buttonShow" value="All"/>
+				<input type="radio" name="group1" class="buttonShow" value="All" aria-label="Filter: All"/>
 				All
 			</label>
 			<label>
-				<input type="radio" name="group1" class="buttonShow" value="Active"/>
+				<input type="radio" name="group1" class="buttonShow" value="Active" aria-label="Filter: Active"/>
 				Active
 			</label>
 			<label>
-				<input type="radio" name="group1" class="buttonShow" value="Completed"/>
+				<input type="radio" name="group1" class="buttonShow" value="Completed" aria-label="Filter: Completed"/>
 				Completed
 			</label>
 			</div>
