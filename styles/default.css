@@ -3,7 +3,7 @@ input[type="checkbox"]:checked+span {
 	text-decoration:line-through;
 }
 
-* {
+body {
 	 font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 .todosTitle {
@@ -13,7 +13,7 @@ input[type="checkbox"]:checked+span {
     font-weight: 200;
     font-size: 100px;
     line-height: 21px;
-    letter-spacing: -2.5px;
+
 }
 input[type="checkbox"]:before {
     display: inline-block;
@@ -27,7 +27,6 @@ input[type="checkbox"]:before {
 	content: '';
 	background: #FFFFFF;
 	box-sizing: border-box;
-	align: center;
 }
 
 input[type="checkbox"]:checked:before {
