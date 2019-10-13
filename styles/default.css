@@ -1,0 +1,56 @@
+input[type="checkbox"]:checked+span {
+	color: grey;
+	text-decoration:line-through;
+}
+
+* {
+	 font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+.todosTitle {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-transform: lowercase;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 100px;
+    line-height: 21px;
+    letter-spacing: -2.5px;
+}
+input[type="checkbox"]:before {
+    display: inline-block;
+    border-radius: 50%;
+    width: 150%;
+    height: 150%;
+    position: relative;
+    bot: 25%;
+    right: 25%;
+    border: 1px solid #555;
+	content: '';
+	background: #FFFFFF;
+	box-sizing: border-box;
+	align: center;
+}
+
+input[type="checkbox"]:checked:before {
+	background: grey;
+    border: 1px solid #555;
+	box-sizing: border-box;
+    text-align: center;
+	content: '✔';
+}
+
+
+.delete-button {
+	width: 20px;
+	height: 20px;
+	background: #FFFFFF;
+    border: 1px solid grey;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+margin-left: 0; /* Отступ слева в браузере IE и Opera */
+padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
