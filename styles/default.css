@@ -63,12 +63,7 @@ input[type="checkbox"]:checked:before {
 }
 
 
-.deleteButton:hover {
-	width: 20px;
-	height: 20px;
-    float: right;
-    background: url(../images/close.png) no-repeat 0 0;
-}
+
 .deleteButton {
 	width: 20px;
 	height: 20px;
@@ -76,7 +71,6 @@ input[type="checkbox"]:checked:before {
     float: right;
     border: none;
     outline: none;
-	content: '';
 }
 
 .todosListItem {
@@ -87,7 +81,12 @@ input[type="checkbox"]:checked:before {
     width: 96%;
     padding: 2%;
 }
-
+.todosListItem:hover {
+    background-color: #f3f3f3;
+}
+.todosListItem:hover .deleteButton {
+    background: url(../images/close.png) no-repeat 0 0;
+}
 .todosListItem:first-child {
     border-top: 1px solid #E6E6E6;
 }
