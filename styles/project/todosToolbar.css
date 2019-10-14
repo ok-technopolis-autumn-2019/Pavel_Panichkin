@@ -1,0 +1,13 @@
+.todosToolbarUnreadyCounter {
+    display: inline-block;
+    width: 150px;
+}
+.todosToolbarFilters {
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+}
+.todosToolbarClearCompleted {
+    display: inline-block;
+    width: 150px;
+}
