@@ -1,98 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset = "UTF-8">
+	<meta charset="UTF-8">
 	<title>TODOS</title>
+	<link rel="stylesheet" type="text/css" href="styles/default.css" />
 </head>
-<style>
-input[type="checkbox"]:checked+span {
-	color: grey;
-	text-decoration:line-through;
-}
-* {
-	font-family: 'Roboto Condensed', sans-serif;
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-}
-input[type="checkbox"]:before {
-    display: inline-block;
-    border-radius: 50%;
-    width: 150%;
-    height: 150%;
-    position: relative;
-    bot: 25%;
-    right: 25%;
-    border: 1px solid #555;
-	content: '';
-	background: #FFFFFF;
-	box-sizing: border-box;
-	align: center;
-}
-input[type="checkbox"]:checked:before {
-	background: grey;
-    border: 1px solid #555;
-	box-sizing: border-box;
-    text-align: center;
-	content: '✔';
-}
-h1 {
-font-style: normal;
-font-weight: 200;
-font-size: 100px;
-line-height: 21px;
-/* identical to box height, or 21% */
 
-letter-spacing: -2.5px;
-}
-.delete-button {
-	width: 20px;
-	height: 20px;
-	background: #FFFFFF;
-    border: 1px solid grey;
-}
-li {
-    list-style-type: none; /* Убираем маркеры */
-}
-ul {
-margin-left: 0; /* Отступ слева в браузере IE и Opera */
-padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
-}
-</style>
 <body>
-	<div class = "todos">
-		<div class = "todosHeader">
-			<h1>Todos</h1>
-		</div>
+	<div class="mainLayout">
+			<h1 class="todosTitle">Todos</h1>
 
-		<div class = "todosList">
-			<div class = "todosListAddItem">
-   				<input type="text" size="40" placeholder="What needs to be done?">
-				<button class = "buttonAdd">Add</button>
+		<div class="todosBoard" >
+			<div class="todosListAddItem">
+				<button class="todosCheckAll" aria-label="Check all items as done"></button>
+   				<input  placeholder="What needs to be done?" aria-label="Input new todos text">
+				<button class="buttonAdd">Add</button>
 			</div>
-			<ul>
-				<li>
-					<input type="checkbox" />  <span>HTML</span>
-					<button class="delete-button">×</button>
+			<ul class="todosList">
+				<li class="todosListItem">
+					<input type="checkbox" aria-label="Mark todos as ready"/>  <span>HTML</span>
+					<button class="deleteButton" aria-label="Delete todos">×</button>
 				</li>
-				<li>
-					<input type="checkbox"/> <span>CSS</span>
-					<button class="delete-button">×</button>
+				<li class="todosListItem">
+					<input type="checkbox" aria-label="Mark todos as ready"/> <span>CSS</span>
+					<button class="deleteButton" aria-label="Delete todos">×</button>
 				</li>
-				<li>
-					<input type="checkbox"/> <span>JS</span>
-					<button class="delete-button">×</button>
+				<li class="todosListItem">
+					<input type="checkbox" aria-label="Mark todos as ready"/> <span>JS</span>
+					<button class="deleteButton" aria-label="Delete todos">×</button>
 				</li>
-				<li>
-					<input type="checkbox"/> <span>JS tools</span>
-					<button class="delete-button">×</button>
+				<li class="todosListItem">
+					<input type="checkbox" aria-label="Mark todos as ready"/> <span>JS tools</span>
+					<button class="deleteButton" aria-label="Delete todos">×</button>
 				</li>
 			</ul>
 		</div>
-		<div class = "todosButtons">
-			<input type="radio" name="group1" class = "buttonShow">All</input>
-			<input type="radio" name="group1" class = "buttonShow">Active</input>
-			<input type="radio" name="group1" class = "buttonShow">Completed</input>
-			<button class = "button">Clear completed</button>
+		<div class="todosToolbar">
+			<div class="todosToolbarUnreadyCounter">3 items left</div>
+
+			<div class="todosToolbarFilters">
+			<label>
+				<input type="radio" name="group1" class="buttonShow" value="All" aria-label="Filter: All"/>
+				All
+			</label>
+			<label>
+				<input type="radio" name="group1" class="buttonShow" value="Active" aria-label="Filter: Active"/>
+				Active
+			</label>
+			<label>
+				<input type="radio" name="group1" class="buttonShow" value="Completed" aria-label="Filter: Completed"/>
+				Completed
+			</label>
+			</div>
+			<button class="todosToolbarClearCompleted">Clear completed</button>
 		</div>
+
 	</div>
 </body>
 </html>

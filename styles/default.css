@@ -1,0 +1,84 @@
+input[type="checkbox"]:checked+span {
+	color: grey;
+	text-decoration:line-through;
+}
+
+body {
+	 font-family: 'Helvetica Neue', Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.todosListAddItem {
+    text-align: center;
+
+}
+.todosCheckAll {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 24px;
+    height: 12px;
+    border: none;
+    outline: none;
+    background: url(../images/select-all.png) no-repeat 0 0;
+
+}
+.todosTitle {
+    text-transform: lowercase;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 100px;
+    line-height: 21px;
+
+}
+
+.todosToolbar {
+
+        text-align: center;
+}
+input[type="checkbox"]:before {
+    display: inline-block;
+    border-radius: 50%;
+    width: 150%;
+    height: 150%;
+    position: relative;
+    bot: 25%;
+    right: 25%;
+    border: 1px solid #555;
+	content: '';
+	background: #FFFFFF;
+	box-sizing: border-box;
+}
+
+input[type="checkbox"]:checked:before {
+	background: grey;
+    border: 1px solid #555;
+	box-sizing: border-box;
+    text-align: center;
+	content: '✔';
+}
+
+
+.deleteButton {
+	width: 20px;
+	height: 20px;
+	background: #FFFFFF;
+    border: 1px solid grey;
+    float: right;
+}
+
+.todosListItem {
+    list-style-type: none; /* Убираем маркеры */
+    line-height: 1.5
+}
+
+ul {
+margin-left: 0; /* Отступ слева в браузере IE и Opera */
+padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
