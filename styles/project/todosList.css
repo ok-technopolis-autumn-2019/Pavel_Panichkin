@@ -31,34 +31,12 @@
 }
 
 
-input[type="checkbox"]:before {
-    display: inline-block;
-    position: relative;
-    border-radius: 50%;
-    width: 150%;
-    height: 150%;
-    right: 30%;
-    top: -20%;
-    border: 1px solid #555;
-	content: '';
-	background: #FFFFFF;
-	box-sizing: border-box;
-}
 
-input[type="checkbox"]:checked:before {
-	background: grey;
-    border: 1px solid #555;
-	box-sizing: border-box;
-    text-align: center;
-	content: '✔';
-}
-input[type="checkbox"]:checked+span {
-	color: grey;
-	text-decoration:line-through;
-}
+
+
 .todosCheckAll {
     float: left;
-    margin-left: 12px;
+    margin-left: 10px;
     margin-top: 10px;
     width: 24px;
     height: 12px;
@@ -66,6 +44,9 @@ input[type="checkbox"]:checked+span {
     outline: none;
     background: url(../../images/select-all.png) no-repeat 0 0;
 }
+
+
+
 
 ul {
 margin-left: 0; /* Отступ слева в браузере IE и Opera */
