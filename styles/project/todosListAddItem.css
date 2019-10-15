@@ -1,0 +1,11 @@
+.todosInput {
+            border: none;
+            background: none;
+            outline: none;
+            padding-left: 2%;
+            width: 98%;
+            font-size: 24px;
+}
+.todosListAddItem {
+    display: flex;
+}
