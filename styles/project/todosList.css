@@ -6,8 +6,7 @@
 
 
 .todosListItem {
-    list-style-type: none; /* Убираем маркеры */
-    line-height: 1.5
+    list-style-type: none; /* Убираем маркеры */\
     display: flex;
     border-bottom: 1px solid #E6E6E6;
     width: 96%;
