@@ -4,12 +4,12 @@
 }
 
 
-
 .todosListItem {
     list-style-type: none; /* Убираем маркеры */
+    display: flex;
     border-bottom: 1px solid #E6E6E6;
-    width: 96%;
     padding: 2%;
+    align-items: center;
 }
 .todosListItem:hover {
     background-color: #f3f3f3;
@@ -20,12 +20,17 @@
 .todosListItem:first-child {
     border-top: 1px solid #E6E6E6;
 }
+.todosListItemText {
+    flex: 2;
+    flex-basis: 90%;
+    margin-left: 2%;
 
+}
 .deleteButton {
+    flex-basis:5%;
 	width: 20px;
 	height: 20px;
 	background: #FFFFFF;
-    float: right;
     border: none;
     outline: none;
 }
