@@ -6,14 +6,12 @@ body {
     margin: 0;
     left: 0;
     display: flex;
-    align-content: center;
-    justify-content: center;
     background: #f4f4f4;
 }
 .mainLayout {
-    max-width: 800px;
+    max-width: 100%;
+    min-width: 40%;
     margin: 0 auto;
-    padding: 0 16px 16px;
 }
 .todosBoard{
     border: 1px solid #E6E6E6;

@@ -1,13 +1,23 @@
 .todosToolbarUnreadyCounter {
-    display: inline-block;
-    width: 150px;
+    flex: 1;
+    flex-basis: 20%;
 }
 .todosToolbarFilters {
-    display: inline-block;
-    width: 400px;
+    flex: 2;
+    flex-basis: 55%;
     text-align: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
 }
 .todosToolbarClearCompleted {
-    display: inline-block;
-    width: 150px;
+    flex: 3;
+    flex-basis: 25%;
+}
+.todosToolbar{
+    display: flex;
 }
