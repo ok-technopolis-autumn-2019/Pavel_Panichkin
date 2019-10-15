@@ -22,3 +22,19 @@
 	color: grey;
 	text-decoration:line-through;
 }
+
+/*
+.customCheckbox:-ms-check {
+    border: 1px solid #555;
+	box-sizing: border-box;
+    text-align: center;
+    background:  white url(../../images/completed.png) no-repeat 0 0;
+}*/
+input[type="checkbox"]::-ms-check {
+    display: inline-block;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background:  white;
+    color: green;
+}
