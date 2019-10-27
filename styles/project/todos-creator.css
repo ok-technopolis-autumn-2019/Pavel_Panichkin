@@ -13,13 +13,10 @@
 }
 
 .todos-creator_check-all {
-    float: left;
-    margin-left: 14px;
-    margin-top: 10px;
-    width: 36px;
-    height: 18px;
+    width: 60px;
+    box-sizing: border-box;
     border: none;
-    outline: none;
     background: url(../../images/select-all1.svg) no-repeat 0 0;
+    background-position: center;
 
 }

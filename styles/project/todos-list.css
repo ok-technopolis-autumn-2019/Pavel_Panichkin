@@ -7,12 +7,18 @@
     padding: 2%;
     align-items: center;
 }
-.todos-list_item:hover {
-    background-color: #f3f3f3;
-}
+.todos-list_item:focus-within .todos-list_item_delete-button,
 .todos-list_item:hover .todos-list_item_delete-button {
     background: url(../../images/close.svg) no-repeat 0 0;
 }
+
+.todos-list_item:focus-within,
+.todos-list_item:hover {
+    background-color: #f3f3f3;
+}
+
+
+
 .todos-list_item:first-child {
     border-top: 1px solid #E6E6E6;
 }
@@ -31,7 +37,7 @@
 	height: 20px;
 	background: #FFFFFF;
     border: none;
-    outline: none;
+    background-color: transparent;
 }
 
 
