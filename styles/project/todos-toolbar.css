@@ -25,6 +25,19 @@
 }
 .filters-item {
     display: inline-block;
-    border: 1px solid #E6E6E6;
+}
 
+.filters-item_input{
+    position: absolute;
+    left: -9999px;
+}
+
+.filters-item_text{
+    padding: 3px;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: transparent;
+}
+.filters-item_input:checked + .filters-item_text{
+    border-color: #E6E6E6;
 }
