@@ -1,9 +1,9 @@
-@import "project/mainLayout.css";
-@import "project/todosList.css";
-@import "project/todosTitle.css";
-@import "project/todosToolbar.css";
-@import "project/customCheckbox.css";
-@import "project/todosListAddItem.css";
+@import "project/main-layout.css";
+@import "project/todos-list.css";
+@import "project/todos-title.css";
+@import "project/todos-toolbar.css";
+@import "project/custom-checkbox.css";
+@import "project/todos-creator.css";
 
 
 

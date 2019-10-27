@@ -7,84 +7,96 @@
 </head>
 
 <body>
-	<div class="mainLayout">
-			<h1 class="todosTitle" class="unselectable">Todos</h1>
+	<div class="main-layout">
+			<h1 class="todos-title" class="unselectable">Todos</h1>
 
-		<div class="todosBoard" >
-			<div class="todosListAddItem">
-				<button class="todosCheckAll" aria-label="Check all items as done"></button>
-   				<input  class="todosInput" placeholder="What needs to be done?" aria-label="Input new todos text">
+		<div class="todos-board" >
+			<div class="todos-creator">
+				<button class="todos-creator_check-all" aria-label="Check all items as done"></button>
+   				<input  class="todos-creator_text-input" placeholder="What needs to be done?" aria-label="Input new todos text">
 			</div>
-			<ul class="todosList">
-				<li class="todosListItem">
-					<div class="customCheckbox">
-						<input class="customCheckboxTarget" type="checkbox" aria-label="Mark todos as ready"/>
-						<div class="customCheckboxVisual">
-							<div class="customCheckboxVisualIcon"></div>
+			<ul class="todos-list">
+				<li class="todos-list_item">
+					<div class="custom-checkbox">
+						<input class="custom-checkbox_target" type="checkbox" aria-label="Mark todos as ready"/>
+						<div class="custom-checkbox_visual">
+							<div class="custom_checkbox_visual_icon"></div>
 						</div>
 					</div>
 
-					<div class="todosListItemText">
+					<div class="todos-list_item_text">
 					<span >HTML</span>
 					</div>
-					<button class="deleteButton" aria-label="Delete todos"></button>
+					<button class="todos-list_item_delete-button" aria-label="Delete todos"></button>
 
 				</li>
-				<li class="todosListItem">
-					<div class="customCheckbox">
-						<input class="customCheckboxTarget" type="checkbox" aria-label="Mark todos as ready"/>
-						<div class="customCheckboxVisual">
-							<div class="customCheckboxVisualIcon"></div>
+				<li class="todos-list_item">
+					<div class="custom-checkbox">
+						<input class="custom-checkbox_target" type="checkbox" aria-label="Mark todos as ready"/>
+						<div class="custom-checkbox_visual">
+							<div class="custom_checkbox_visual_icon"></div>
 						</div>
 					</div>
-					<div class="todosListItemText">
-						<span>CSS</span>
+
+					<div class="todos-list_item_text">
+						<span >CSS</span>
 					</div>
-					<button class="deleteButton" aria-label="Delete todos"></button>
+					<button class="todos-list_item_delete-button" aria-label="Delete todos"></button>
+
 				</li>
-				<li class="todosListItem">
-					<div class="customCheckbox">
-						<input class="customCheckboxTarget" type="checkbox" aria-label="Mark todos as ready"/>
-						<div class="customCheckboxVisual">
-							<div class="customCheckboxVisualIcon"></div>
+				<li class="todos-list_item">
+					<div class="custom-checkbox">
+						<input class="custom-checkbox_target" type="checkbox" aria-label="Mark todos as ready"/>
+						<div class="custom-checkbox_visual">
+							<div class="custom_checkbox_visual_icon"></div>
 						</div>
 					</div>
-					<div class="todosListItemText">
+
+					<div class="todos-list_item_text">
 						<span >JS</span>
 					</div>
-					<button class="deleteButton" aria-label="Delete todos"></button>
+					<button class="todos-list_item_delete-button" aria-label="Delete todos"></button>
+
 				</li>
-				<li class="todosListItem">
-					<div class="customCheckbox">
-						<input class="customCheckboxTarget" type="checkbox" aria-label="Mark todos as ready"/>
-						<div class="customCheckboxVisual">
-							<div class="customCheckboxVisualIcon"></div>
+				<li class="todos-list_item">
+					<div class="custom-checkbox">
+						<input class="custom-checkbox_target" type="checkbox" aria-label="Mark todos as ready"/>
+						<div class="custom-checkbox_visual">
+							<div class="custom_checkbox_visual_icon"></div>
 						</div>
 					</div>
-					<div class="todosListItemText">
+
+					<div class="todos-list_item_text">
 						<span >JS tools</span>
 					</div>
-					<button class="deleteButton" aria-label="Delete todos"></button>
+					<button class="todos-list_item_delete-button" aria-label="Delete todos"></button>
+
 				</li>
 			</ul>
-			<div class="todosToolbar">
-				<div class="todosToolbarUnreadyCounter">3 items left</div>
+			<div class="todos-toolbar">
+				<div class="todos-toolbar_unready-counter">3 items left</div>
 
-				<div class="todosToolbarFilters">
+				<div class="todos-toolbar_filters">
 				<label>
+					<div class="filters-item">
 					<input type="radio" name="group1" class="buttonShow" value="All" aria-label="Filter: All"/>
 					All
+					</div>
 				</label>
 				<label>
+					<div class="filters-item">
 					<input type="radio" name="group1" class="buttonShow" value="Active" aria-label="Filter: Active"/>
 					Active
+					</div>
 				</label>
 				<label>
-					<input type="radio" name="group1" class="buttonShow" value="Completed" aria-label="Filter: Completed"/>
+					<div class="filters-item">
+					<input type="radio" name="group1"  value="Completed" aria-label="Filter: Completed"/>
 					Completed
+					</div>
 				</label>
 				</div>
-				<button class="todosToolbarClearCompleted">Clear completed</button>
+				<button class="todos-toolbar_clear-completed">Clear completed</button>
 			</div>
 		</div>
 

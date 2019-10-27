@@ -1,12 +1,11 @@
-.todosTitle {
-    text-transform: lowercase;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 100px;
-    line-height: 21px;
+.todos-toolbar_unready-counter {
+    flex: 1;
+    flex-basis: 20%;
+}
+.todos-toolbar_filters {
+    flex: 2;
+    flex-basis: 55%;
     text-align: center;
-
-
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
   -khtml-user-select: none;    /* Konqueror */
@@ -14,7 +13,19 @@
   -ms-user-select: none;       /* Internet Explorer/Edge */
   user-select: none;           /* Non-prefixed version, currently
                                   not supported by any browser */
-
-
+}
+.todos-toolbar_clear-completed {
+    flex: 3;
+    flex-basis: 20%;
+    background: none;
+    outline: none;
+    box-shadow: 0 1px 8px rgba(0,0,0,.2);
+}
+.todos-toolbar{
+    display: flex;
+}
+.filters-item {
+    display: inline-block;
+    border: 1px solid #E6E6E6;
 
 }

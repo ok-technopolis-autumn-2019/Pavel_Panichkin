@@ -8,12 +8,12 @@ body {
     display: flex;
     background: #f4f4f4;
 }
-.mainLayout {
-    max-width: 100%;
-    min-width: 40%;
+.main-layout {
+    max-width: 600px;
+    min-width: 500px;
     margin: 0 auto;
 }
-.todosBoard{
+.todos-board{
     border: 1px solid #E6E6E6;
     box-shadow: 0 2px 16px rgba(0,0,0,.2);
     background: #ffffff;
