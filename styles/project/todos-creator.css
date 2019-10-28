@@ -1,0 +1,22 @@
+.todos-creator_text-input {
+            border: none;
+            background: none;
+            outline: none;
+            padding-left: 2%;
+            width: 98%;
+            font-size: 24px;
+
+    font-style: italic;
+}
+.todos-creator {
+    display: flex;
+}
+
+.todos-creator_check-all {
+    width: 60px;
+    box-sizing: border-box;
+    border: none;
+    background: url(../../images/select-all1.svg) no-repeat 0 0;
+    background-position: center;
+
+}

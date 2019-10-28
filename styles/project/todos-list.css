@@ -1,0 +1,55 @@
+
+
+.todos-list_item {
+    list-style-type: none; /* Убираем маркеры */
+    display: flex;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 2%;
+    align-items: center;
+}
+.todos-list_item:focus-within .todos-list_item_delete-button,
+.todos-list_item:hover .todos-list_item_delete-button {
+    background: url(../../images/close.svg) no-repeat 0 0;
+}
+
+.todos-list_item:focus-within,
+.todos-list_item:hover {
+    background-color: #f3f3f3;
+}
+
+
+
+.todos-list_item:first-child {
+    border-top: 1px solid #E6E6E6;
+}
+.todos-list_item_text {
+    flex-grow: 1;
+    min-width: 0;
+    flex: 2;
+    flex-basis: 90%;
+    margin-left: 2%;
+    word-wrap: break-word;
+
+}
+.todos-list_item_delete-button {
+    flex-basis:5%;
+	width: 20px;
+	height: 20px;
+	background: #FFFFFF;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+
+.todos-list_item_text {}
+
+
+
+
+
+ul {
+margin-left: 0; /* Отступ слева в браузере IE и Opera */
+padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}

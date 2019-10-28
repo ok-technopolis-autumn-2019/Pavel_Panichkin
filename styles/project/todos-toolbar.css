@@ -1,0 +1,43 @@
+.todos-toolbar_unready-counter {
+    flex: 1;
+    flex-basis: 20%;
+}
+.todos-toolbar_filters {
+    flex: 2;
+    flex-basis: 55%;
+    text-align: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+.todos-toolbar_clear-completed {
+    border: 1px solid #E6E6E6;
+    flex: 3;
+    flex-basis: 20%;
+    background: none;
+}
+.todos-toolbar{
+    display: flex;
+}
+.filters-item {
+    display: inline-block;
+}
+
+.filters-item_input{
+    position: absolute;
+    left: -9999px;
+}
+
+.filters-item_text{
+    padding: 3px;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: transparent;
+}
+.filters-item_input:checked + .filters-item_text{
+    border-color: #E6E6E6;
+}
